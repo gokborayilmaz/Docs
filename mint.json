@@ -61,7 +61,7 @@
       "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
     },
     {
-      "group": "Welcome",
+      "group": "On Prem",
       "pages": [
         "on-prem/welcome.mdx",
         "on-prem/what_news.mdx",
