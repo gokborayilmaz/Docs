@@ -59,7 +59,12 @@
         "getting_started/requirements_and_prerequisites", 
         "getting_started/install_upsonic"]
     },
-
+    {
+      "group": "Using",
+      "pages": [
+        "using/home"
+      ]
+    },
     {
       "group": "On Prem",
       "pages": [
