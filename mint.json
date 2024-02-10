@@ -65,18 +65,18 @@
       "pages": [
         "on-prem/welcome",
         "on-prem/what_news",
-        "on-prem/release_notes",
-        {
-          "group": "Getting Started",
-          "pages": [
-            "on-prem/getting_started/introduction",
-            "on-prem/getting_started/architecture",
-            "on-prem/getting_started/requirements_and_prerequisites",
-            "on-prem/getting_started/install_upsonic"
-          ]
-        }
+        "on-prem/release_notes"
       ]
-    }
+    },
+    {
+      "group": "Getting Started",
+      "pages": [
+        "on-prem/getting_started/introduction",
+        "on-prem/getting_started/architecture",
+        "on-prem/getting_started/requirements_and_prerequisites",
+        "on-prem/getting_started/install_upsonic"
+      ]
+    },    
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
