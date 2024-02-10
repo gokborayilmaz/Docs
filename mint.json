@@ -53,13 +53,18 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "group": "Client",
+      "pages": ["welcome", "what_news", "release_notes"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "group": "Getting Started",
+      "pages": [
+        "getting_started/introduction", 
+        "getting_started/architecture", 
+        "getting_started/requirements_and_prerequisites", 
+        "getting_started/install_upsonic"]
     },
+
     {
       "group": "On Prem",
       "pages": [
