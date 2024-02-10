@@ -31,6 +31,9 @@
       "url": "on-prem"
     }
   ],
+  "primaryTab": {
+    "name": "Client"
+  },
   "anchors": [
     {
       "name": "Documentation",
