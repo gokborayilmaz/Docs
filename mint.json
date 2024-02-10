@@ -35,6 +35,9 @@
       "url": "on-prem"
     }
   ],
+  "primaryTab": {
+    "name": "Home"
+  },
   "anchors": [
     {
       "name": "Community",
@@ -48,6 +51,7 @@
     }
   ],
   "navigation": [
+    "home",
     {
       "group": "Client",
       "pages": [
