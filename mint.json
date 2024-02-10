@@ -61,15 +61,12 @@
       "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Welcome",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "on-prem/welcome.mdx",
+        "on-prem/what_news.mdx",
+        "on-prem/release_notes.mdx"
+
       ]
     }
   ],
