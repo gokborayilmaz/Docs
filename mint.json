@@ -63,9 +63,9 @@
     {
       "group": "On Prem",
       "pages": [
-        "on-prem/welcome.mdx",
-        "on-prem/what_news.mdx",
-        "on-prem/release_notes.mdx"
+        "on-prem/welcome",
+        "on-prem/what_news",
+        "on-prem/release_notes"
 
       ]
     }
