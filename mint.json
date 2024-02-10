@@ -33,7 +33,11 @@
     {
       "name": "On Prem",
       "url": "on-prem"
-    }
+    },
+    {
+      "name": "Blog",
+      "url": "blog"
+    }    
   ],
   "primaryTab": {
     "name": "Home"
@@ -47,7 +51,7 @@
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "/blog"
     }
   ],
   "navigation": [
@@ -101,7 +105,15 @@
       "pages": [
         "on-prem/using/home"
       ]
-    }    
+    },
+
+    {
+      "group": "Blog",
+      "pages": [
+        "blog/home"
+      ]
+    }   
+
   ],
   "footerSocials": {
     "x": "https://x.com/getUpsonic",
