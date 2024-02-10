@@ -27,6 +27,10 @@
   },
   "tabs": [
     {
+      "name": "Client",
+      "url": "client"
+    },    
+    {
       "name": "On Prem",
       "url": "on-prem"
     }
@@ -49,20 +53,24 @@
   "navigation": [
     {
       "group": "Client",
-      "pages": ["welcome", "what_news", "release_notes"]
+      "pages": [
+        "client/welcome", 
+        "client/what_news", 
+        "client/release_notes"
+      ]
     },
     {
       "group": "Getting Started",
       "pages": [
-        "getting_started/introduction", 
-        "getting_started/architecture", 
-        "getting_started/requirements_and_prerequisites", 
-        "getting_started/install_upsonic"]
+        "client/getting_started/introduction", 
+        "client/getting_started/architecture", 
+        "client/getting_started/requirements_and_prerequisites", 
+        "client/getting_started/install_upsonic"]
     },
     {
       "group": "Using",
       "pages": [
-        "using/home"
+        "client/using/home"
       ]
     },
     {
