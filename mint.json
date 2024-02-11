@@ -39,9 +39,6 @@
       "url": "blog"
     }    
   ],
-  "primaryTab": {
-    "name": "Home"
-  },
   "anchors": [
     {
       "name": "Blog",
