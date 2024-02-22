@@ -3,3 +3,40 @@ title: Update On-Prem
 icon: "arrows-rotate"
 iconType: "solid"
 ---
+
+<Warning>Before making an update, we recommend to taking a backup of your **upsonic_on_prem_data** volume.</Warning>
+
+
+## Updating
+With this docs we will update your installation to the latest version that we release and you should look to [latest updatest](https://docs.upsonic.co/on-prem/what_news). We will stop and remove your currenty container that names as **upsonic_on_prem** the volume and other containers or applications will not effected.
+
+```console
+docker stop upsonic_on_prem
+```
+
+```console
+docker remove upsonic_on_prem
+```
+
+With these commands your installation is removed but as you know the volume is staying with us. Now we will pull the latest image with `docker pull` command:
+
+```console
+docker pull ghcr.io/upsonic/on-prem
+```
+
+And finaly we will install and run the newest Upsonic On-Prem:
+
+<Warning>Please check the .env file and its should be same with your first installation.</Warning>
+
+
+```console
+docker run --env-file .env -d -p 5001:5001 -p 5000:5000 --name upsonic_on_prem --restart=always -v upsonic_on_prem_data:/var/lib/redis ghcr.io/upsonic/on-prem
+
+```
+
+## Checking
+Now you can access to your Upsonic On-Prem via localhost or any other access type to your server:
+
+```console
+https://localhost:5001
+```
