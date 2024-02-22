@@ -23,6 +23,14 @@ upsonic = Upsonic_On_Prem('https://your-server-address:5000', 'ACK_*************
 
 This function is for dumping an singular think to Upsonic. With this you can dump Function, Class, Object or any Variable. Yu just need to give a name with `key` parameter and giving the element with `value` parameter.
 
+<ParamField path="key" type="string">
+  The virtual and free-use path for your dumped value
+</ParamField>
+<ParamField path="value" type="any_python_thing">
+  The value that you want to dump
+</ParamField>
+
+
 ```python
 def sum(a, b):
     return a + b
@@ -36,6 +44,14 @@ upsonic.dump("math.sum", sum)
 ## upsonic.dump_module
 
 This is for dumping whole library in just one command. You can use for dumping a folder of your already have library. You just need to give `key` and modue as `value`.
+
+<ParamField path="key" type="string">
+  The name that you want to use in load operations
+</ParamField>
+<ParamField path="value" type="module">
+  The module that you want to dump everything about that
+</ParamField>
+
 
 ```python
 import random
