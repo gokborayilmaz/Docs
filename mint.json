@@ -59,17 +59,12 @@
     {
       "group": "Client",
       "pages": [
-        "client/welcome", 
-        "client/what_news", 
-        "client/release_notes"
+        "client/welcome"
       ]
     },
     {
       "group": "Getting Started",
       "pages": [
-        "client/getting_started/introduction", 
-        "client/getting_started/architecture", 
-        "client/getting_started/requirements_and_prerequisites", 
         "client/getting_started/install_client",
         "client/getting_started/update_client"
       ]
