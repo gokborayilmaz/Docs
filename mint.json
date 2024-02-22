@@ -72,7 +72,8 @@
     {
       "group": "Using",
       "pages": [
-        "client/using/home"
+        "client/using/dump",
+        "client/using/load"
       ]
     },
     {
