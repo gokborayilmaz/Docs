@@ -3,3 +3,42 @@ title: Dump
 icon: "file-export"
 iconType: "solid"
 ---
+
+## Introduction
+The dump functions is the first stage of using Upsonic. This functions serialize and prepare the datas and sending to the Upsonic On-Prem system.
+
+<Note>
+Please copy the connection code from **Dashboard**. Your connection code should like that:
+```python
+
+from upsonic import Upsonic_On_Prem
+upsonic = Upsonic_On_Prem('https://your-server-address:5000', 'ACK_****************')
+                
+```
+
+</Note>
+
+
+## upsonic.dump
+
+This function is for dumping an singular think to Upsonic. With this you can dump Function, Class, Object or any Variable. Yu just need to give a name with `key` parameter and giving the element with `value` parameter.
+
+```python
+def sum(a, b):
+    return a + b
+
+upsonic.dump("math.sum", sum)
+```
+<Info>You can put any class just like that, no changes required.</Info>
+
+
+
+## upsonic.dump_module
+
+This is for dumping whole library in just one command. You can use for dumping a folder of your already have library. You just need to give `key` and modue as `value`.
+
+```python
+import random
+
+upsonic.dump_module("random", random)
+```
