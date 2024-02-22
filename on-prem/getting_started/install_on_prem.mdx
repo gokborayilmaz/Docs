@@ -24,10 +24,16 @@ docker volume create upsonic_on_prem_data
 Setting .env
 
 ```console
+nano .env
+```
+
+```console
 admin_key=YOUR_ADMIN_KEY_FOR_API # 123
 admin_pass=YOUR_ADMIN_PASS_FOR_DASHBOARD # 123456
 admin_username=YOUR_ADMIN_USERNAME #upsonic_admin
 ```
+
+after the settings you can exit via ctrl+x and y and enter.
 
 
 Now we will download, install and run the Upsonic On-Prem container:
