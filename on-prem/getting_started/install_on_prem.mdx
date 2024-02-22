@@ -24,11 +24,9 @@ docker volume create upsonic_on_prem_data
 Setting .env
 
 ```console
-admin_key =     "YOUR_ADMIN_KEY_FOR_API"
-admin_pass =    "YOUR_ADMIN_PASS_FOR_DASHBOARD"
-admin_username= "YOUR_ADMIN_USERNAME"
-
-dash_origins=   "https://localhost:5001" # Give the real access address that you plan you can give multiple addres with , "https://any_domain:5001,https://any_ip_or_localhost:5001"
+admin_key=YOUR_ADMIN_KEY_FOR_API # 123
+admin_pass=YOUR_ADMIN_PASS_FOR_DASHBOARD # 123456
+admin_username=YOUR_ADMIN_USERNAME #upsonic_admin
 ```
 
 
@@ -47,7 +45,7 @@ CONTAINER ID   IMAGE                     COMMAND          CREATED          STATU
 
 
 ## Logging In
-Now you can access to your Upsonic On-Prem via the address that you type with dash_origin
+Now you can access to your Upsonic On-Prem via localhost or any other access type to your server:
 ```console
 https://localhost:5001
 ````
