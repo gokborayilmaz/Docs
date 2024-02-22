@@ -38,7 +38,12 @@ Now we will download, install and run the Upsonic On-Prem container:
 docker run --env-file .env -d -p 5001:5001 -p 5000:5000 --name upsonic_on_prem --restart=always -v upsonic_on_prem_data:/var/lib/redis ghcr.io/upsonic/on-prem
 ```
 
-
+After that you should see:
+```console
+root@server:~# docker ps
+CONTAINER ID   IMAGE                     COMMAND          CREATED          STATUS          PORTS                                                           NAMES
+918a4c74185a   ghcr.io/upsonic/on-prem   "bash /run.sh"   11 seconds ago   Up 10 seconds   0.0.0.0:5000-5001->5000-5001/tcp, :::5000-5001->5000-5001/tcp   upsonic_on_prem
+```
 
 
 ## Logging In
