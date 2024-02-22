@@ -72,6 +72,7 @@
     {
       "group": "Using",
       "pages": [
+        "client/using/connection",
         "client/using/dump",
         "client/using/load"
       ]
