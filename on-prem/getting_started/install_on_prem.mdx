@@ -3,3 +3,47 @@ title: Install On-Prem
 icon: "download"
 iconType: "solid"
 ---
+
+## Introduction
+Upsonic On-Prem consist two sub system, the Dashboard and the API. Both systems runs in a one container and connects inside. This document helps you for installing and running the container without any problem.
+
+To get started, you will need:
+
+- The latest verson of Docker installed and working
+- Ready to use 5001 and 5000 TCP ports 
+
+## Deployment
+
+First we will create a volume to storing everything:
+
+```console
+docker volume create upsonic_on_prem_data
+```
+
+
+Setting .env
+
+```console
+admin_key =     "YOUR_ADMIN_KEY_FOR_API"
+admin_pass =    "YOUR_ADMIN_PASS_FOR_DASHBOARD"
+admin_username= "YOUR_ADMIN_USERNAME"
+
+dash_origins=   "https://localhost:5001" # Give the real access address that you plan you can give multiple addres with , "https://any_domain:5001,https://any_ip_or_localhost:5001"
+```
+
+
+Now we will download, install and run the Upsonic On-Prem container:
+
+```console
+docker run --env-file .env -d -p 5001:5001 -p 5000:5000 --name upsonic_on_prem --restart=always -v upsonic_on_prem_data:/var/lib/redis ghcr.io/upsonic/on-prem
+```
+
+
+
+
+## Logging In
+Now you can access to your Upsonic On-Prem via the address that you type with dash_origin
+```console
+https://localhost:5001
+````
+
