@@ -6,11 +6,26 @@ iconType: "solid"
 ---
 
 
-<img height="320" src="/images/hero-dark.svg"/>
-
 
 ## What is Upsonic ?
 Upsonic gives teams instant access to shared code and frequently used snippets, preventing duplication of similar code and reducing spaghetti code creation.
+
+<CardGroup cols={2}>
+```python
+def sum(a, b):
+    return a + b
+
+upsonic.dump("math.sum", sum)
+
+```
+```python
+sum = upsonic.load("math.sum")
+
+
+sum(1, 2)
+
+```
+</CardGroup>
 
 
 - Instant acccess to shared code
