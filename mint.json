@@ -24,10 +24,6 @@
       "url": "mailto:info@upsonic.co"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://docs.upsonic.co/getting_started/introduction"
-  },
   "tabs": [
     {
       "name": "Client",
@@ -41,13 +37,6 @@
       "name": "Blog",
       "url": "blog"
     }    
-  ],
-  "anchors": [
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://upsonic.mintlify.app/blog/home"
-    }
   ],
   "navigation": [
     {
