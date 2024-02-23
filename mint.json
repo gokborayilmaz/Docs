@@ -98,7 +98,8 @@
     {
       "group": "Using",
       "pages": [
-        "on-prem/using/home"
+        "on-prem/using/home",
+        "on-prem/using/libraries"
       ]
     },
 
