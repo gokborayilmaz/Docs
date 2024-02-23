@@ -7,13 +7,20 @@ iconType: "solid"
 Upsonic On-Prem aim is to be an easy install and fault tolerance by its design system. With this way everything is packaged in one container.
 
 
+## Server Requirements
+The Upsonic On-Prem is designed to be work alone, so some systems in our container can take lots of ram and cpu also our container is big because the ml models.
+
+So we are recommend these requirements for your server:
+
+- 4 Core CPU
+- 8 GB   RAM
+- 50GB   DISK
+
+
 ## Persistent storage
 Upsonic On-Prem requires an storage volume to keeping functions, classes, objects and variables that sent from Client and for the user informations and generative AI result. By the default the docker is giving an not persistent storage for containers but we just want to set an external and persistent volume.
 
 By the design and use case we Upsonic On-Prem doesnt need any big volume sizes. Because the functions and other elements that we keep haves verry low sizes. Also the dashboard that we give is have small system and small database.
-
-But the Upsonic On-Prem image has PyTorch and other big libraries with some ML models. The image is near to 6GB so you should prepare a **7GB** or more gigabayte storage for running an Upsonic in your system.
-
 
 ## Port configuration
 Upsonic is needs two open port for dash and api ([Architecture](https://docs.upsonic.co/on-prem/getting_started/architecture)). The ports that we want is about to Client communication and accessing to Dashboard.
