@@ -3,3 +3,43 @@ title: Load
 icon: "file-import"
 iconType: "regular"
 ---
+
+## Introduction
+The load functions is the last and use stage of Upsonic. With this functions you can get your putted thinks just like the original statements. The load functions is gets and deserialize the thinks that you sent before to Upsonic On-Prem system.
+
+To get started, you will need:
+
+- Implemented [connection code](/client/getting_started/connection)
+
+
+
+## upsonic.load
+
+This function is for loading an singular think from Upsonic. With this you can load Function, Class, Object or any Variable. Yu just need to give a name with `key` parameter.
+
+<ParamField path="key" type="string">
+  The virtual and free-use path of your dumped value
+</ParamField>
+
+```python
+sum = upsonic.load("math.sum")
+sum(1, 2)
+```
+
+
+
+## upsonic.load_module
+
+This is for loading whole library in just one command. You just need to give `key`.
+
+<ParamField path="key" type="string">
+  The name of library that you want to get
+</ParamField>
+
+
+
+```python
+random = upsonic.load_module("random")
+
+random.Random().random()
+```
