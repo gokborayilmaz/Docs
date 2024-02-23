@@ -39,6 +39,9 @@ This is for loading whole library in just one command. You just need to give `ke
 
 
 ```python
+math = upsonic.load_module("math")
+math.sum(1, 2)
+
 random = upsonic.load_module("random")
 
 random.Random().random()
