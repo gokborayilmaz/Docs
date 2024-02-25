@@ -26,7 +26,7 @@
   ],
   "topbarCtaButton": {
     "name": "DEMO",
-    "url": "demo"
+    "url": "/demo"
   },
   "tabs": [
     {
