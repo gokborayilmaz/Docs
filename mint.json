@@ -24,6 +24,10 @@
       "url": "mailto:info@upsonic.co"
     }
   ],
+  "topbarCtaButton": {
+    "name": "DEMO",
+    "url": "demo"
+  },
   "tabs": [
     {
       "name": "Client",
@@ -43,8 +47,7 @@
       "group": "Home",
       "pages": [
         "home",
-        "client/home",
-        "on-prem/home"
+        "demo"
       ]
     },
     {
