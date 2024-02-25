@@ -43,8 +43,8 @@
       "group": "Home",
       "pages": [
         "home",
-        "client",
-        "on-prem"
+        "client/home",
+        "on-prem/home"
       ]
     },
     {
