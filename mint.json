@@ -42,7 +42,9 @@
     {
       "group": "Home",
       "pages": [
-        "home"
+        "home",
+        "client",
+        "on-prem"
       ]
     },
     {
