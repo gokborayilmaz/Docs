@@ -4,7 +4,7 @@ icon: "file-export"
 iconType: "solid"
 ---
 
-The dump functions is the first stage of using Upsonic. This functions serialize and prepare the datas and sending to the Upsonic On-Prem system.
+The dump functions are the initial step in using Upsonic. These functions serialize and prepare the data, sending it to the Upsonic On-Prem system.
 
 
 To get started, you will need:
@@ -13,15 +13,15 @@ To get started, you will need:
 
 
 
-## upsonic.dump
+## ' upsonic.dump '
 
-This function is for dumping an singular think to Upsonic. With this you can dump Function, Class, Object or any Variable. You just need to give a name with `key` parameter and giving the element with `value` parameter.
+This function is used for dumping a singular item to Upsonic. With this, you can dump a Function, Class, Object, or any Variable. You just need to provide a name with the `key` parameter and assign the element with the `value` parameter.
 
 <ParamField path="key" type="string">
-  The virtual and free-use path for your dumped value
+  The virtual and freely chosen path for your dumped value.
 </ParamField>
 <ParamField path="value" type="any_python_thing">
-  The value that you want to dump
+  The value that you want to dump.
 </ParamField>
 
 
@@ -31,19 +31,19 @@ def sum(a, b):
 
 upsonic.dump("math.sum", sum)
 ```
-<Info>You can put any class just like that, no changes required.</Info>
+<Info>You can include any class just as it is; no changes are required.</Info>
 
 
 
-## upsonic.dump_module
+## ' upsonic.dump_module '
 
-This is for dumping whole library in just one command. You can use for dumping a folder of your already have library. You just need to give `key` and modue as `value`.
+This command is designed to dump an entire library with just one line. You can use it to dump a folder containing your existing library. You only need to provide a 'key' and the 'module' as its 'value' .
 
 <ParamField path="key" type="string">
-  The name that you want to use in load operations
+  The name you want to use in load operations.
 </ParamField>
 <ParamField path="value" type="module">
-  The module that you want to dump everything about that
+  The module that you want to dump, including all its contents.
 </ParamField>
 
 
