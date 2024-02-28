@@ -4,16 +4,16 @@ icon: "download"
 iconType: "solid"
 ---
 
-Upsonic On-Prem consist two sub system, the Dashboard and the API. Both systems runs in a one container and connects inside. This document helps you for installing and running the container without any problem.
+Upsonic On-Prem consists of two subsystems: the Dashboard and the API. Both systems run in a single container and connect internally. This document guides you through the installation and execution of the container without any issues.
 
 To get started, you will need:
 
-- The latest verson of Docker installed and working
-- Ready to use 5001 and 5000 TCP ports 
+- The latest version of Docker installed and functioning properly
+- TCP ports 5001 and 5000 ready for use
 
 ## Deployment
 
-First we will create a volume to storing everything:
+First, we will create a volume to store everything:
 
 ```console
 docker volume create upsonic_on_prem_data
@@ -32,16 +32,16 @@ admin_pass=YOUR_ADMIN_PASS_FOR_DASHBOARD # 123456
 admin_username=YOUR_ADMIN_USERNAME #upsonic_admin
 ```
 
-after the settings you can exit via ctrl+x and y and enter.
+after adjusting the settings, you can exit by pressing Ctrl+X, then confirming with 'Y' and pressing Enter.
 
 
-Now we will download, install and run the Upsonic On-Prem container:
+Now, let's proceed with the download, installation, and execution of the Upsonic On-Prem container:
 
 ```console
 docker run --env-file .env -d -p 5001:5001 -p 5000:5000 --name upsonic_on_prem --restart=always -v upsonic_on_prem_data:/var/lib/redis ghcr.io/upsonic/on-prem:latest
 ```
 
-After that you should see:
+After that, you should see:
 ```console
 root@server:~# docker ps
 CONTAINER ID   IMAGE                     COMMAND          CREATED          STATUS          PORTS                                                           NAMES
@@ -50,7 +50,7 @@ CONTAINER ID   IMAGE                     COMMAND          CREATED          STATU
 
 
 ## Logging In
-Now you can access to your Upsonic On-Prem via localhost or any other access type to your server:
+Now, you can access your Upsonic On-Prem via localhost or any other method of accessing your server:
 ```console
 https://localhost:5001
 ````
