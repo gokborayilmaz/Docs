@@ -4,13 +4,12 @@ icon: "book"
 iconType: "solid"
 ---
 
-Upsonic On-Prem aim is to be an easy install and fault tolerance by its design system. With this way everything is packaged in one container.
-
+The aim of Upsonic On-Prem is to provide easy installation and fault tolerance through its designed system. In this way, everything is packaged in one container.
 
 ## Server Requirements
-The Upsonic On-Prem is designed to be work alone, so some systems in our container can take lots of ram and cpu also our container is big because the ml models.
+Upsonic On-Prem is designed to work alone; however, some systems in our container may consume a significant amount of CPU and RAM, especially due to the inclusion of machine learning models. 
 
-So we are recommend these requirements for your server:
+Therefore, we recommend the following requirements for your server:
 
 - 4 Core CPU
 - 8 GB   RAM
@@ -18,14 +17,14 @@ So we are recommend these requirements for your server:
 
 
 ## Persistent storage
-Upsonic On-Prem requires an storage volume to keeping functions, classes, objects and variables that sent from Client and for the user informations and generative AI result. By the default the Docker is giving an not persistent storage for containers but we just want to set an external and persistent volume.
+Upsonic On-Prem requires a storage volume to store functions, classes, objects, and variables sent from the Client, as well as user information and generative AI results. By default, Docker does not provide persistent storage for containers, but we recommend setting up an external and persistent volume.
 
-By the design and use case we Upsonic On-Prem doesnt need any big volume sizes. Because the functions and other elements that we keep haves verry low sizes. Also the dashboard that we give is have small system and small database.
+Due to the design and use case, Upsonic On-Prem doesn't require large volume sizes. The functions and other elements we store have very low sizes. Additionally, the dashboard we provide has a small system and a small database.
 
 ## Port configuration
-Upsonic is needs two open port for Dash and API ([Architecture](https://docs.upsonic.co/on-prem/getting_started/architecture)). The ports that we want is about to Client communication and accessing to Dashboard.
+Upsonic needs two open ports for the dashboard and API ([Architecture](https://docs.upsonic.co/on-prem/getting_started/architecture)). These ports are essential for client communication and accessing the dashboard.
 
-For the Upsonic On-Prem the following ports must be open:
+For Upsonic On-Prem, the following ports must be open:
 
 - TCP port **5001** for Dashboard
 - TCP port **5000** for API (for clients)
