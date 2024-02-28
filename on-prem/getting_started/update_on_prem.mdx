@@ -4,10 +4,10 @@ icon: "arrows-rotate"
 iconType: "solid"
 ---
 
-<Warning>Before making an update, we recommend to taking a backup of your **upsonic_on_prem_data** volume.</Warning>
+<Warning>Before performing an update, we recommend taking a backup of your **upsonic_on_prem_data** volume.</Warning>
 
 
-With this docs we will update your installation to the latest version that we release and you should look to [latest updatest](https://docs.upsonic.co/on-prem/what_news). We will stop and remove your currenty container that names as **upsonic_on_prem** the volume and other containers or applications will not effected.
+With these instructions, we will update your installation to the latest version that we have released, and you should check for the [latest updatest](https://docs.upsonic.co/on-prem/what_news). We will stop and remove your current container named **upsonic_on_prem** ; the volume and other containers or applications will not be affected.
 
 ```console
 docker stop upsonic_on_prem
@@ -17,15 +17,15 @@ docker stop upsonic_on_prem
 docker remove upsonic_on_prem
 ```
 
-With these commands your installation is removed but as you know the volume is staying with us. Now we will pull the latest image with `docker pull` command:
+With these commands, your installation will be removed. However, as you know, the volume will remain intact. Now, let's pull the latest image using the `docker pull` command:
 
 ```console
 docker pull ghcr.io/upsonic/on-prem
 ```
 
-And finaly we will install and run the newest Upsonic On-Prem:
+And finally, we will install and run the latest Upsonic On-Prem:
 
-<Warning>Please check the .env file and its should be same with your first installation.</Warning>
+<Warning>Please check the .env file, and it should be the same as your first installation.</Warning>
 
 
 ```console
@@ -34,8 +34,7 @@ docker run --env-file .env -d -p 5001:5001 -p 5000:5000 --name upsonic_on_prem -
 ```
 
 ## Checking
-Now you can access to your Upsonic On-Prem via localhost or any other access type to your server:
-
+Now, you can access your Upsonic On-Prem via localhost or any other method to connect to your server:
 ```console
 https://localhost:5001
 ```
