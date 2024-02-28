@@ -38,7 +38,7 @@ after the settings you can exit via ctrl+x and y and enter.
 Now we will download, install and run the Upsonic On-Prem container:
 
 ```console
-docker run --env-file .env -d -p 5001:5001 -p 5000:5000 --name upsonic_on_prem --restart=always -v upsonic_on_prem_data:/var/lib/redis ghcr.io/upsonic/on-prem
+docker run --env-file .env -d -p 5001:5001 -p 5000:5000 --name upsonic_on_prem --restart=always -v upsonic_on_prem_data:/var/lib/redis ghcr.io/upsonic/on-prem:latest
 ```
 
 After that you should see:
