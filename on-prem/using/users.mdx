@@ -5,17 +5,17 @@ iconType: "solid"
 ---
 
 
-Upsonic On-Prem is designed to be work with read and write permissions on API, also the dashboard is gathering the informations from API and with logged in user access key. So you must to use seting `READ` and `WRITE` permissions for gathering information and making operations and for dump&load functions.
+Upsonic On-Prem is designed to work with read and write permissions on the API. Additionally, the dashboard gathers information from the API using the access key of the logged-in user. Therefore, you must set  `READ` and `WRITE`permissions to gather information and perform operations, including dump & load functions.
 
 
-Also we have `enabled` and `is_admin` booleans and the **admins doesnt have any limits* so you must be careful about that. And when you disabled a user the user will lose whole permissions. After the enablation everything come back to the configuration and permissions.
+Additionally, we have `enabled` and `is_admin` booleans, and the **admins doesnt have any limits* , so you must be careful about that. When you disable a user, the user will lose all permissions. After disabling, everything reverts to the default configuration and permissions.
 
 ## Viewing the users
 
-You can make `enable`, `disable` `set_admin`,`unset_admin` operations and `delete` operations as well. Also when you want to make some edits like viewing access key and changing password, you can use `edit` button.
+You can perform enable, disable, set_admin, unset_admin operations, and delete operations as well. Additionally, for tasks like viewing access keys and changing passwords, you can use the `edit` button.
 
 
-<Warning>You cannot make any change or deletion to the Robust Admin. Its defined from the beginning and the [configuration](/on-prem/getting_started/install_on_prem#deployment).</Warning>
+<Warning>You cannot make any changes or deletions to the Robust Admin. It is defined from the beginning in the [configuration](/on-prem/getting_started/install_on_prem#deployment).</Warning>
 
 
 <img height="300" src="/images/users.svg" />
@@ -24,20 +24,20 @@ You can make `enable`, `disable` `set_admin`,`unset_admin` operations and `delet
 
 ## Editing a user
 
-When you clicked to `Edit` you will see this section and you are able to these operations:
+When you click on `Edit`, you will see this section where you can perform the following operations:
 
-- Name, surname and username change
-- Password change
+- Change name, surname, and username
+- Change password
 
-- Adding or removing read permissions to libraries
-- Adding or removing write permissions to libraries
+- Add or remove read permissions to libraries
+- Add or remove write permissions to libraries
 
 
 ### Permissions
-Upsonic On-Prem have scope based permission for easily management and onboarding. When you add `math.sum` to read scopes of an user the user can easily read and get the function. Write permissions also same as reads, when you give the user can make dumps. Also we are supporting the `asterisk` (*) so when you use `math.*` for an user, user will be able to use permissions to all sub elements of math.
+Upsonic On-Prem has scope-based permissions for easy management and onboarding. When you add `math.sum` to the read scopes of a user, the user can easily read and retrieve the function. Write permissions are also similar to reads; when granted, the user can make dumps. Additionally, we support the `asterisk` (*) wildcard, so when you use `math.*` for a user, the user will have permissions for all sub-elements of math.
 
 
-<Warning>If you see None document for an element in libraries its caused from permissions. A user should try to click to element and after the first click the system will generate the document in the backend.</Warning>
+<Warning>If you see a 'None' document for an element in libraries, it is due to permissions. Users should try clicking on the element, and after the first click, the system will generate the document in the backend.</Warning>
 
 
 <CardGroup cols={2}>
