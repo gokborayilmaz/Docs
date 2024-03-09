@@ -47,6 +47,7 @@
       "group": "Home",
       "pages": [
         "home",
+        "advisors",
         "customers",
         "demo"
       ]
