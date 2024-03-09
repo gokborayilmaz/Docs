@@ -49,6 +49,23 @@ CONTAINER ID   IMAGE                     COMMAND          CREATED          STATU
 918a4c74185a   ghcr.io/upsonic/on-prem   "bash /run.sh"   11 seconds ago   Up 10 seconds   0.0.0.0:5000-5001->5000-5001/tcp, :::5000-5001->5000-5001/tcp   upsonic_on_prem
 ```
 
+## Extra Options
+### Limiting Model CPU usage
+Limiting model CPU usage is improves the general performance of application. Because if you dont specify anything the model can take whole CPU to making analyses. But with this env variable you can limit how many CPU core that you want to give to model:
+
+```console
+main_model_cpu=3
+```
+
+### Using OpenAI Model Instead of Gemma
+If you want to use OpenAI `gpt-3.5-turbo` or `gpt-4` models to use as default model. You just need to specify env variables.
+
+```console
+openai_api_key=YOUR_OPENAI_API_KEY
+default_model=gpt-4 # or gpt-3.5-turbo
+```
+
+
 
 ## Logging In
 Now, you can access your Upsonic On-Prem via localhost or any other method of accessing your server:
