@@ -1,0 +1,22 @@
+# Upsonic v0.18.0
+
+
+
+## Search Mechanism [New]
+In this version we just added a search infrastructure to easily find anything with your question. 
+
+For this we are using embedding search infrastructure with ollama. You can access and get results by your read permissions and going with just clicking.
+
+Features:
+- **Minimum Score Threshold**: Users can specify a minimum score for search results, ensuring that only the most relevant documentation is returned. The closer it is to 1, the more relevant it is.
+- **Result Limit**: To manage the volume of information, users have the option to limit the number of results returned by the search.
+
+
+<img height="400" src="/images/search_in_home.gif" />
+
+## OpenAI Model Support [New]
+With this version we just add a ability to use `gpt-3.5-turbo` and `gpt-4` instead of `gemma-2b` model. 
+
+For this you just need to add env variabes:
+- `openai_api_key`
+- `default_model`
