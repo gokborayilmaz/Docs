@@ -30,7 +30,7 @@ And finally, we will install and run the latest Upsonic On-Prem:
 
 
 ```console
-docker run --env-file .env -d -p 5001:5001 -p 7500:7500 --name upsonic_on_prem --restart=always -v upsonic_on_prem_data:/var/lib/redis ghcr.io/upsonic/on-prem
+docker run --env-file .env -d -p 7501:7501 -p 7500:7500 --name upsonic_on_prem --restart=always -v upsonic_on_prem_data:/var/lib/redis ghcr.io/upsonic/on-prem
 
 ```
 
